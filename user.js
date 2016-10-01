@@ -90,7 +90,7 @@ var allHostNames = ["1fichier.com|dl4free.com", "2shared.com", "4fastfile.com", 
     CUSTOM_ADD
     ***********/
     "uptobox.com", "jheberg.net", "jeodrive.com", "mirrorupload.net", "go4up.com", "multiup.org", "shareflare.net", "letitbit.net", "bigdownloader.com",
-    "turbobit.pl|turbobit.net", "upservmedia.com|hklp.co", "fufox.net"
+    "turbobit.pl|turbobit.net", "upservmedia.com|hklp.co", "fufox.net", "uplea.com"
 ];
 
 //separate alternative domains with "|" char (first name is considered being main)
