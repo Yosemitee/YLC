@@ -218,9 +218,9 @@ var update = {
     version: '',
     currentTime: new Date().valueOf(),
     baseUrl: 'https://github.com/Yosemitee/YLC',
-    updateSuffix: 'raw/master/update.json',
+    updateSuffix: 'master/update.json',
     changelogSuffix: '/master/changelog.md',
-    userscriptSuffix: 'raw/master/YLC.user.js',
+    userscriptSuffix: 'master/YLC.user.js',
 
     init: function() {
         var timeDiff = update.currentTime - Last_Update_Check;
