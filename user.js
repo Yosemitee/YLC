@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           YLC - Yosemite Links Checker
+// @name           YLC - Yosemite Link Checker
 // @description    Dead links verification
 // @details        Based on W.A.R. Links Checker
 // @version        1.0
