@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name           YLC - Yosemite Link Checker
 // @description    Dead links verification
 // @details        Based on W.A.R. Links Checker
@@ -218,9 +218,9 @@ var update = {
     version: '',
     currentTime: new Date().valueOf(),
     baseUrl: 'https://github.com/Yosemitee/YLC',
-    updateSuffix: 'master/update.json',
-    changelogSuffix: '/master/changelog.md',
-    userscriptSuffix: 'master/user.js',
+    updateSuffix: 'raw/master/update.json',
+    changelogSuffix: 'blob/master/changelog.md',
+    userscriptSuffix: 'raw/master/user.js',
 
     init: function() {
         var timeDiff = update.currentTime - Last_Update_Check;
@@ -237,7 +237,7 @@ var update = {
                 res = JSON.parse(result.responseText);
                 if (res.version.replace(/\./g, '') > YLC_version.replace(/\./g, '')) {
                     update.getUpdate(res.version);
-                } else if (Show_Update_Notification) sendMessage('Votre version (v' + YLC_version + ') est à jour.');
+                } else if (Show_Update_Notification) sendMessage('Version (v' + YLC_version + ') à jour.');
             }
         });
     },
@@ -245,9 +245,9 @@ var update = {
     getUpdate: function(version) {
         var changelogUrl = update.baseUrl + update.changelogSuffix;
         var userscriptUrl = update.baseUrl + update.userscriptSuffix;
-        var allowedToInstall = confirm('YLC - Mise à jour disponible (v' + version + ').\nElle sera installée après confirmation.\nNote: Si la mise à jour ne s\'effectue pas, vérifiez que votre navigateur ne bloque pas les popup.');
+        var allowedToInstall = confirm('YLC - Mise à jour disponible (v' + version + ').\nElle sera installée après confirmation.\nN.B. : Vérifiez que le navigateur ne bloque pas les popup.');
 
-        sendMessage('Mise à jour effectuée. Version ' + version + '. Cliquez <a href="' + changelogUrl + '">ici</a> pour voir les dernières modifications.');
+        sendMessage('Mise à jour effectuée. Version ' + version + ' installée. Cliquez <a href="' + changelogUrl + '">ici</a> pour plus d\'informations.');
 
         if (allowedToInstall) {
             window.open(userscriptUrl, '_blank');
@@ -1457,7 +1457,7 @@ function configuration() {
     <div id="YLCPreferences" class="YLCTabContainer">\
     <fieldset>\
     <legend>Réglages généraux</legend>\
-    <p><input type="checkbox" id="Do_not_linkify_DL_links"> Rendre les liens NON cliquables</p>\
+    <p><input type="checkbox" id="Do_not_linkify_DL_links"> Rendre les liens non-cliquables</p>\
     <p><input type="checkbox" id="Allow_spaces_in_DL_links"> Autoriser les espaces dans les liens<br><div id="configinfo">Note: Tous les liens doivent se terminer par un retour à la ligne!</div></p>\
     <p><input type="checkbox" id="Display_full_links_in_link_containers"> Afficher les liens dans les conteneurs</p>\
     <p><input type="checkbox" id="Display_tooltip_info"> Afficher une infobulle<br><div id="configinfo">Note: Nom, taille du fichier, messages d\'erreur, etc.</div></p>\
