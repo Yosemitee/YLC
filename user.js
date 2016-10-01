@@ -2,7 +2,7 @@
 // @name           YLC - Yosemite Link Checker
 // @description    Dead links verification
 // @details        Based on W.A.R. Links Checker
-// @version        1.0
+// @version        0.0.1
 // @license        Use it freely
 // @author         Yosemite / Original iKickback & thecodingdude
 // @include        *ultimate-warez.eu*
@@ -16,7 +16,7 @@
 // @noframes
 // ==/UserScript==
 
-var YLC_version = "1.0";
+var YLC_version = "0.0.1";
 
 //separate alternative domains with "|" char (first name is considered being main)
 var allHostNames = ["1fichier.com|dl4free.com", "2shared.com", "4fastfile.com", "adrive.com", "bezvadata.cz", "filebeam.com",

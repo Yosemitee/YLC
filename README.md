@@ -1,5 +1,7 @@
 # YLC Link Checker
 
+# STILL NOT WORKING
+
 Based on [W.A.R. Links Checker](http://userscripts-mirror.org/scripts/show/125631)
 
 ## Installation
